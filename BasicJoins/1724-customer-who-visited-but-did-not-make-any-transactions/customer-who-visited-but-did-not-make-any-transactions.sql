@@ -1,4 +1,5 @@
 # Write your MySQL query statement below
+-- Using Inner Queries
 
 -- SELECT c.customer_id, COUNT(c.visit_id) AS count_no_trans 
 --     FROM Visits AS c 
@@ -9,6 +10,8 @@
 --         Transactions AS b 
 --         ON a.visit_id = b.visit_id)
 --     GROUP BY c.customer_id;
+
+-- Using Joins
 
 SELECT a.customer_id, COUNT(a.visit_id) AS count_no_trans 
     FROM Visits AS a 
